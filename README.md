@@ -111,8 +111,6 @@ void SystemClock_Config(void)
      Error_Handler();
    }
 }
-
-
 static void MX_GPIO_Init(void)
  {
    GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -134,8 +132,7 @@ static void MX_GPIO_Init(void)
    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
  }
-
- void Error_Handler(void)
+void Error_Handler(void)
  {
    __disable_irq();
    while (1)
@@ -153,7 +150,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output  :
- 
+ ![Screenshot 2024-03-13 202923](https://github.com/praveen2p/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/151658061/86609828-cc06-486a-b34f-87065c582a3e)
+![Screenshot 2024-03-13 202940](https://github.com/praveen2p/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/151658061/a9b981f6-8f6e-4b17-bded-f28c20d2d2c2)
+
  
  
  
